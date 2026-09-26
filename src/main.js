@@ -19,10 +19,10 @@ let count = 0;
 pbtn.addEventListener('click', () => {
   count += 1;
   if(count<0){
-  countEl.classList.add("text-red-600");
+  countEl.classList.add("text-red-500");
 }
 if(count>=0){
-  countEl.classList.remove("text-red-600");
+  countEl.classList.remove("text-red-500");
 }
   countEl.textContent = count;
 });
@@ -30,7 +30,7 @@ if(count>=0){
 mbtn.addEventListener('click', () => {
   count -= 1;
   if(count<0){
-  countEl.classList.add("text-red-600");
+  countEl.classList.add("text-red-500");
 }
   countEl.textContent = count;
 });
@@ -38,10 +38,10 @@ mbtn.addEventListener('click', () => {
 reset.addEventListener('click', () => {
   count = 0;
   if(count<0){
-  countEl.classList.add("text-red-600");
+  countEl.classList.add("text-red-500");
 }
 if(count>=0){
-  countEl.classList.remove("text-red-600");
+  countEl.classList.remove("text-red-500");
 }
   countEl.textContent = count;
 });
